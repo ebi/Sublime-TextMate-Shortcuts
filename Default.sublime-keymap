@@ -1,0 +1,49 @@
+<!--
+Place your key bindings in here, this will ensure they don't get overwritten
+when installing new versions of Sublime Text
+-->
+<bindings>
+	<!-- Tab selection -->
+	<binding key="ctrl+1" command="focusView 0"/>
+	<binding key="ctrl+2" command="focusView 1"/>
+	<binding key="ctrl+3" command="focusView 2"/>
+	<binding key="ctrl+4" command="focusView 3"/>
+	<binding key="ctrl+5" command="focusView 4"/>
+	<binding key="ctrl+6" command="focusView 5"/>
+	<binding key="ctrl+7" command="focusView 6"/>
+	<binding key="ctrl+8" command="focusView 7"/>
+	<binding key="ctrl+9" command="focusView 8"/>
+	<binding key="ctrl+0" command="focusView 9"/>
+	
+	<!--  Moving in text -->
+	<binding key="ctrl+a" command="moveTo bol"/>
+	<binding key="ctrl+e" command="moveTo eol"/>
+	<binding key="ctrl+tab" command="indent"/>
+	<binding key="ctrl+shift+tab" command="unindent"/>
+	<binding key="ctrl+shift+l" command="sequence 'moveTo bol' 'moveTo eol extend'"/>
+	
+	<!-- Search and replace -->
+	<binding key="ctrl+t" command="openFileInProject"/>
+	<binding key="ctrl+g" command="findNext"/>
+	<binding key="ctrl+shift+f" command="findInProject"/>
+	<binding key="alt+e" command="slurpFindString"/>
+	<binding key="alt+shift+e" command="slurpReplaceString"/>
+	<binding key="ctrl+shift+k" command="sequence 'expandSelectionTo line' 'leftDeleteCharacters'">
+  		<context name="allSelectionsEmpty" value="true"/>
+  	</binding>
+	<binding key="ctrl+shift+d" command="sequence 'expandSelectionTo line' 'copy' 'paste' 'paste' 'move lines -2'">
+		<context name="allSelectionsEmpty" value="true"/>
+	</binding>
+	<binding key="ctrl+shift+d" command="sequence 'copy' 'paste' 'paste'">
+		<context name="allSelectionsEmpty" value="false"/>
+	</binding>
+	
+	
+	<!-- ADJUSTING FOR SWISS KEYBOARD LAYOUT -->
+	<binding key="ctrl+shift+7" command="toggleComment">
+		<context name="allSelectionsEmpty" value="false"/>
+	</binding>
+	<binding key="ctrl+shift+7" command="sequence 'moveTo eol' 'moveTo bol extend' 'toggleComment">
+		<context name="allSelectionsEmpty" value="true"/>
+	</binding>
+</bindings>

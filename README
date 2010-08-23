@@ -1,0 +1,13 @@
+The goal of Sublime-TextMate-Shortcuts is to get the shortcuts as close as possible to TextMate. Since I mainly work on OSX I want to have a similar editor on Windows.
+
+For me personally I remapped the following keys:
+Left Alt to Left Control
+Left Windows to Left Alt
+CapsLock to Left Control
+
+If you wan't to have the same execute Keymap.reg
+
+Shortcuts that are changed:
+
+Command-E: Alt-E
+Command-Shift-E: Alt-E
